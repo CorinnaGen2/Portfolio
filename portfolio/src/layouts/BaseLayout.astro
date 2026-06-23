@@ -1,0 +1,31 @@
+---
+import '../styles/global.css';
+---
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Corinna Genchi — End-to-End Product Builder. Strategy, planning, and code. I help professionals and startups go from idea to shipped product." />
+    <link rel="icon" href="/favicon.svg" />
+    <title>Corinna Genchi — End-to-End Product Builder</title>
+    <script>
+      (function(){
+        try{
+          const theme = localStorage.getItem('theme');
+          if(theme === 'dark' || (!theme && window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches)){
+            document.documentElement.classList.add('dark');
+          }
+        }catch(e){/*ignore*/}
+      })();
+    </script>
+  </head>
+  <body class="bg-[#06070a] text-[#e6eef8]">
+    <slot name="header" />
+    <main class="site-container">
+      <slot />
+    </main>
+    <slot name="footer" />
+    <script type="module" src="/src/scripts/scroll-reveal.js"></script>
+  </body>
+</html>
