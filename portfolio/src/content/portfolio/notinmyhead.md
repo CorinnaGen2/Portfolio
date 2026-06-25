@@ -13,15 +13,23 @@ website: ''
 
 ## The Problem
 
-Creatives need a frictionless way to capture thoughts before they disappear, but existing note apps are either too complex or too simple.
+Autoimmune diagnosis take 5 years aprox.
+
+People who suffers from these conditions end up looking for answers using AI chatbots, losing ownership of very sensible data.
+
+People suffering from autoimmune diseases and chronic pain needs a better way to track their symptoms and habits.
+
+Not In My head provide a privacy first tool to facilitate the communication between patients and doctors.
+
 
 ## My Role
 
-- **Product Discovery**: Validated the problem through user interviews
-- **MVP Definition**: Scoped the smallest possible product to test demand
-- **Development**: Built with Astro.js for speed and performance
-- **Wizard of Oz**: Used manual backend processes to validate value before investing in infrastructure
+- **Product Discovery**: Created a paper version to both validate needs and receive feedback, set up feedback session with target users and medical experts.
+-- **Business plan**: Created a comprhensive business plan, with SWOT and risk analysis, revenue streams, competitors analysis.
+- **MVP Definition**: Defined a 9 months road map using Kano Model
+- **Development**: Landing page MVP using astro, webapp in progress
+
 
 ## Results
 
-MVP launched to a small test group. Validated core hypothesis that users want a "zero-friction capture" tool. Iterating based on feedback.
+MVP launched to a small test group. Validated core hypothesis that users want a "zero-friction capture" tool. Iterating based on feedback. Paper product already available: 

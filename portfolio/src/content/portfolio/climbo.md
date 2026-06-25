@@ -4,7 +4,7 @@ description: 'A climbing gym platform to manage routes, events, and community. I
 slug: climbo
 status: 'Launched'
 tags:
-  - React Native
+  - Native development
   - TypeScript
   - Expo
   - Product Strategy
@@ -14,17 +14,16 @@ website: 'https://www.climboapp.com/'
 
 ## The Problem
 
-Climbing gyms needed a digital way to manage their routes, engage their community, and track athlete progress. Existing solutions were generic fitness apps that didn't understand climbing culture.
+Climbing gyms needed a digital way to manage their routes, engage their community, and track athlete progress. Existing solutions were generic fitness apps that didn't understand climbing culture. Climbo was already online since 2014 but it needed a new vision and a new look!
 
 ## My Role
 
 Full end-to-end product ownership:
 - **Discovery**: User interviews with gym owners and climbers
-- **Strategy**: Business Model Canvas, feature prioritization, roadmap
+- **Strategy**: Redifined the vision, draft a new GTM plan, updated roadmap and defined new features,social media strategy definitition and content creation.
 - **Design**: UX redesign focused on route management workflows
-- **Development**: React Native app with TypeScript and Expo
-- **Launch**: App Store deployment and gym onboarding
+- **Launch**: App is currently available, new updates every 3 months!
 
 ## Results
 
-Launched to multiple climbing gyms with active user base managing thousands of routes.
+Climbo keeps growig is user base all around the world, and every day more Gyms decided to join the app!

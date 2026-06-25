@@ -19,7 +19,7 @@ Communities lack tools to recognize and reward positive contributions. Good deed
 
 ## My Role
 
-- **Product Strategy**: Defined the gamification mechanics and reward system
+- **Product Strategy**: Defined the gamification mechanics and reward system, research legal an GDPR topics related to the donations process
 - **Frontend Development**: Built the React Native app with Expo
 - **Architecture**: Designed real-time tracking system for community actions
 - **AI Integration**: Using AI tools to accelerate development while maintaining code quality

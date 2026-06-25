@@ -1,23 +1,51 @@
 ---
-import { getCollection } from 'astro:content';
+import { getCollection, render } from 'astro:content';
 import ProjectCard from './ProjectCard.astro';
 
-const allProjects = await getCollection('portfolio');
+interface Project {
+  id: string;
+  collection: string;
+  data: {
+    title: string;
+    description: string;
+    status: string;
+    image?: string;
+    tags?: string[];
+    tech?: string[];
+    github?: string;
+    website?: string;
+    link?: string;
+  };
+}
+
+const allProjects = await getCollection('portfolio', (entry: Project) => {
+  return true;
+});
+
+async function renderContent(project: Project) {
+  const { Content } = await render(project);
+  return Content;
+}
 ---
 
 <section id="projects" class="py-16">
   <h2 class="text-3xl font-bold mb-3">Selected projects</h2>
   <p class="text-gray-400 mb-10 max-w-2xl">A mix of personal projects and enterprise work — each one end-to-end: discovery, strategy, design, and code.</p>
   <div class="grid grid-cols-1 gap-5">
-    {allProjects.map((project) => (
-      <ProjectCard
-        title={project.data.title}
-        description={project.data.description}
-        status={project.data.status}
-        image={project.data.image}
-        tech={project.data.tags ?? []}
-        link={project.data.website || '#'}
-      />
-    ))}
+    {allProjects.map(async (project) => {
+      const Content = await renderContent(project);
+      return (
+        <ProjectCard
+          title={project.data.title}
+          description={project.data.description}
+          status={project.data.status}
+          image={project.data.image}
+          tech={project.data.tags ?? []}
+          link={project.data.website || '#'}
+        >
+          <Content />
+        </ProjectCard>
+      );
+    })}
   </div>
 </section>
