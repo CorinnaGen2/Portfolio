@@ -173,6 +173,52 @@ import ProjectsGrid from '../components/ProjectsGrid.astro';
 	<!-- PROJECTS -->
 	<ProjectsGrid />
 
+	<!-- TESTIMONIALS -->
+	<section id="testimonials" class="py-16" aria-labelledby="testimonials-heading">
+		<h2 id="testimonials-heading" class="text-3xl font-bold mb-3">What clients say</h2>
+		<p class="text-gray-400 mb-10 max-w-2xl">Reviews from my freelance projects. More coming soon.</p>
+
+		<div class="grid grid-cols-1 md:grid-cols-2 gap-5" id="testimonials-grid">
+			<!-- Placeholder 1 -->
+			<div class="card reveal" data-reveal style="border-style: dashed; border-color: rgba(255,255,255,0.1);">
+				<div class="flex items-center gap-3 mb-3">
+					<div class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center text-gray-500 text-lg">?</div>
+					<div>
+						<div class="font-semibold text-gray-400">Your name here</div>
+						<div class="text-xs text-gray-600">via Malt · 2026</div>
+					</div>
+				</div>
+				<p class="text-gray-500 text-sm italic">"Your review will appear here after your first project. Deliver great work and clients will vouch for you!"</p>
+			</div>
+
+			<!-- Placeholder 2 -->
+			<div class="card reveal" data-reveal style="border-style: dashed; border-color: rgba(255,255,255,0.1);">
+				<div class="flex items-center gap-3 mb-3">
+					<div class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center text-gray-500 text-lg">?</div>
+					<div>
+						<div class="font-semibold text-gray-400">Your name here</div>
+						<div class="text-xs text-gray-600">via Upwork · 2026</div>
+					</div>
+				</div>
+				<p class="text-gray-500 text-sm italic">"Collect reviews from different platforms to show range and credibility."</p>
+			</div>
+		</div>
+
+		<!-- Future: When you have real reviews, replace the cards above with this structure:
+		<div class="card">
+			<div class="flex items-center gap-3 mb-3">
+				<div class="w-10 h-10 rounded-full bg-purple-500/20 flex items-center justify-center text-purple-300 font-bold text-sm">AB</div>
+				<div>
+					<div class="font-semibold">Alice Brown</div>
+					<div class="text-xs text-gray-500">Founder, StartupName · via Malt</div>
+				</div>
+			</div>
+			<p class="text-gray-300 text-sm">"Corinna delivered our MVP in 7 days. Strategy + code, one person. Would absolutely hire again."</p>
+			<div class="mt-2 text-yellow-400 text-sm">★★★★★</div>
+		</div>
+		-->
+	</section>
+
 	<!-- FINAL CTA -->
 	<section class="py-16 text-center">
 		<h2 class="text-3xl font-bold mb-4">Have an idea?</h2>
