@@ -1,14 +1,23 @@
 ---
-import projects from '../data/projects';
+import { getCollection } from 'astro:content';
 import ProjectCard from './ProjectCard.astro';
+
+const allProjects = await getCollection('portfolio');
 ---
 
 <section id="projects" class="py-16">
   <h2 class="text-3xl font-bold mb-3">Selected projects</h2>
   <p class="text-gray-400 mb-10 max-w-2xl">A mix of personal projects and enterprise work — each one end-to-end: discovery, strategy, design, and code.</p>
-  <div class="grid grid-cols-1 lg:grid-cols-1 gap-5">
-    {projects.map(p => (
-      <ProjectCard title={p.title} description={p.description} status={p.status} tech={p.tech} link={p.link} />
+  <div class="grid grid-cols-1 gap-5">
+    {allProjects.map((project) => (
+      <ProjectCard
+        title={project.data.title}
+        description={project.data.description}
+        status={project.data.status}
+        image={project.data.image}
+        tech={project.data.tags ?? []}
+        link={project.data.website || '#'}
+      />
     ))}
   </div>
 </section>

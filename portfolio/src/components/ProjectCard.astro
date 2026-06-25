@@ -1,37 +1,43 @@
 ---
-export interface Props {
+import { Image } from 'astro:assets';
+
+interface Props {
   title: string;
   description: string;
   status: string;
-  tech: string[];
+  image?: string;
+  tech?: string[];
   link?: string;
 }
 
-export let title = '';
-export let description = '';
-export let status = '';
-export let tech: string[] = [];
-export let link = '#';
+const { title, description, status, image, tech = [], link = '#' } = Astro.props;
 ---
 
 <article class="card reveal" data-reveal>
   <div class="flex items-start justify-between gap-4">
     <div class="flex-1">
-      <div class="flex items-center gap-3 mb-2">
+      <div class="flex items-center gap-3 mb-2 flex-wrap">
         <h4 class="text-lg font-semibold">{title}</h4>
         <span class="status-badge" style={`background:${status === 'Launched' ? 'linear-gradient(90deg,#16a34a,#059669)' : status === 'MVP' ? 'linear-gradient(90deg,#38bdf8,#06b6d4)' : 'linear-gradient(90deg,#f59e0b,#f97316)'}`}>{status}</span>
       </div>
+      {image && (
+        <div class="mb-4 rounded-lg overflow-hidden border border-white/10">
+          <img src={image} alt={title} class="w-full h-auto object-cover" loading="lazy" />
+        </div>
+      )}
       <p class="text-gray-400 text-sm leading-relaxed mb-3">{description}</p>
-      <div class="flex flex-wrap gap-2">
-        {tech.map(t => (
-          <span class="text-xs px-2 py-1 rounded-md bg-white/5 text-gray-300 border border-white/10">{t}</span>
-        ))}
-      </div>
+      {tech && tech.length > 0 && (
+        <div class="flex flex-wrap gap-2">
+          {tech.map(t => (
+            <span class="text-xs px-2 py-1 rounded-md bg-white/5 text-gray-300 border border-white/10">{t}</span>
+          ))}
+        </div>
+      )}
     </div>
   </div>
-  {link !== '#' && (
+  {link && link !== '#' && (
     <div class="mt-3 pt-3 border-t border-white/5">
-      <a href={link} class="text-sm text-purple-400 hover:text-purple-300 transition-colors">View project →</a>
+      <a href={link} target="_blank" rel="noopener noreferrer" class="text-sm text-purple-400 hover:text-purple-300 transition-colors">View project →</a>
     </div>
   )}
 </article>
