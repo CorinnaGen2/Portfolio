@@ -8,8 +8,6 @@ redirects = []
 
 [build]
 publish = "dist"
-publishOrigin = "ui"
-commandOrigin = "ui"
 command = "npm run build"
 
 [build.environment]
