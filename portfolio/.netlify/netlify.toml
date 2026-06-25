@@ -1,6 +1,4 @@
 plugins = []
-functionsDirectory = "/Users/corinnagenchi/Desktop/Portfolio/Portfolio/portfolio/netlify/functions"
-functionsDirectoryOrigin = "config-v1"
 headers = []
 redirects = []
 
@@ -10,14 +8,12 @@ redirects = []
 
 [build]
 publish = "/Users/corinnagenchi/Desktop/Portfolio/Portfolio/portfolio/dist"
-publishOrigin = "config"
-commandOrigin = "config"
+publishOrigin = "ui"
+commandOrigin = "ui"
 base = "/Users/corinnagenchi/Desktop/Portfolio/Portfolio/portfolio"
 command = "npm run build"
-functions = "/Users/corinnagenchi/Desktop/Portfolio/Portfolio/portfolio/netlify/functions"
 
 [build.environment]
-NODE_VERSION = "18"
 
 [build.processing]
 
