@@ -1,0 +1,32 @@
+plugins = []
+functionsDirectory = "/Users/corinnagenchi/Desktop/Portfolio/Portfolio/portfolio/netlify/functions"
+functionsDirectoryOrigin = "config-v1"
+headers = []
+redirects = []
+
+[functions]
+
+[functions."*"]
+
+[build]
+publish = "/Users/corinnagenchi/Desktop/Portfolio/Portfolio/portfolio/dist"
+publishOrigin = "config"
+commandOrigin = "config"
+base = "/Users/corinnagenchi/Desktop/Portfolio/Portfolio/portfolio"
+command = "npm run build"
+functions = "/Users/corinnagenchi/Desktop/Portfolio/Portfolio/portfolio/netlify/functions"
+
+[build.environment]
+NODE_VERSION = "18"
+
+[build.processing]
+
+[build.processing.css]
+
+[build.processing.html]
+
+[build.processing.images]
+
+[build.processing.js]
+
+[build.services]
