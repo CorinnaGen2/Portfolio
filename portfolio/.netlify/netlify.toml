@@ -7,13 +7,13 @@ redirects = []
 [functions."*"]
 
 [build]
-publish = "/Users/corinnagenchi/Desktop/Portfolio/Portfolio/portfolio/dist"
+publish = "dist"
 publishOrigin = "ui"
 commandOrigin = "ui"
-base = "/Users/corinnagenchi/Desktop/Portfolio/Portfolio/portfolio"
 command = "npm run build"
 
 [build.environment]
+NODE_VERSION = "22"
 
 [build.processing]
 
