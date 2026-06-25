@@ -3,7 +3,6 @@ title: KarmaPoints
 description: 'A mobile app that rewards positive community actions. Built the frontend with React Native and Expo — real-time tracking, gamification, and social features.'
 slug: karma
 status: 'In Progress'
-image: '/images/karma-screens.png'
 tags:
   - React Native
   - Expo
