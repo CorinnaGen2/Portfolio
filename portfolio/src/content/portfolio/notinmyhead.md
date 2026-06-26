@@ -1,6 +1,6 @@
 ---
 title: Not In My Head
-description: 'A small product experiment exploring note-taking and idea capture for creatives. Built to validate demand for a lightweight thinking tool.'
+description: 'An hybrid product meant to support people diagnosed with autoimmune disease and chronic pain to track their symptoms.'
 slug: notinmyhead
 status: 'MVP'
 tags:
@@ -8,7 +8,7 @@ tags:
   - TypeScript
   - Product Experiment
 github: ''
-website: ''
+website: 'https://notinmyhead.org/'
 ---
 
 ## The Problem
@@ -32,4 +32,4 @@ Not In My head provide a privacy first tool to facilitate the communication betw
 
 ## Results
 
-MVP launched to a small test group. Validated core hypothesis that users want a "zero-friction capture" tool. Iterating based on feedback. Paper product already available: 
+MVP launched to a small test group. Iterating based on feedback. Paper product launch date on July 15th.
