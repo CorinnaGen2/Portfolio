@@ -4,9 +4,9 @@ description: 'A climbing gym platform to manage routes, events, and community. I
 slug: climbo
 status: 'Launched'
 tags:
-  - Native development
-  - TypeScript
-  - Expo
+  - Product Discovery
+  - User interviews
+  - Value definition
   - Product Strategy
 github: ''
 website: 'https://www.climboapp.com/'
